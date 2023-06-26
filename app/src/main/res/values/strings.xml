@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">汽车销售APP</string>
+
+    <string-array name = "phones_array">
+        <item>6 months</item>
+        <item>12 months</item>
+        <item>24 months</item>
+    </string-array>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".DetailsActivity">
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ImageView>
+    <TextView
+        android:id="@+id/tv_detail_msg"
+        android:layout_width="match_parent"
+        android:textColor="#DD306B"
+        android:layout_marginTop="20sp"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"></TextView>
+    <Button
+        android:id="@+id/bt_buy"
+        android:layout_width="wrap_content"
+        android:text="立即购买"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal|bottom"
+
+
+        android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

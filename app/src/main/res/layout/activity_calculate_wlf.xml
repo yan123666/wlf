@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context=".CalculateActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Price"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="DisCount Percent"
+            android:layout_height="wrap_content"></TextView>
+        <SeekBar
+            android:id="@+id/seek_DisCount_Percent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></SeekBar>
+        <TextView
+            android:id="@+id/tv_percent"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="DisCount Account"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/tv_DisCount_Account"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Total"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/tv_Total"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Dividel?"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"></TextView>
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_no"
+                android:layout_width="wrap_content"
+                android:text="No"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:id="@+id/rb_yes"
+                android:layout_width="wrap_content"
+                android:text="Yes"
+                android:checked="true"
+                android:layout_height="wrap_content"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="DownPayment"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/tv_DownPayment"
+            android:layout_width="0dp"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Loan"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/tv_Loan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Periods"
+            android:layout_height="wrap_content"></TextView>
+        <Spinner
+            android:id="@+id/sp_Periods"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_marginLeft="20sp"
+            android:entries="@array/phones_array"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="Per period"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/tv_period"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+</LinearLayout>
